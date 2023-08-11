@@ -70,7 +70,10 @@ export function App() {
     global: true,
     handlers: {
       m: () => toggleMetronome(),
-      Space: () => toggle()
+      Space: (event) => {
+        event.preventDefault();
+        toggle();
+      }
     }
   }));  
 
@@ -105,7 +108,7 @@ export function App() {
                 how you should sound like.
               </p>
             </header>
-            <Score part={partWithAccents} key="Em"/>
+            <Score part={partWithAccents} partKey="Em"/>
             <div className="controls-wrapper">
               <div className="controls">
                 <IconButton icon={isPlaying ? "pause" : "play"} onClick={toggle}>
