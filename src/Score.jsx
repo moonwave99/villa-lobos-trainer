@@ -2,8 +2,8 @@ import { memo } from "react";
 import { isEqual } from "lodash";
 import useAbc from "./hooks/useAbc";
 
-function MusicScore({ part, id = "score" }) {
-  const ref = useAbc({ part });
+function MusicScore({ part, key, id = "score" }) {
+  const ref = useAbc({ part, key });
   return (
     <div className="music-score-wrapper">
       <div className="music-score" ref={ref} id={id}></div>

@@ -24,7 +24,6 @@ body {
 
 .container {
   display: flex;
-  gap: 1rem;
 }
 
 .container aside {
@@ -66,8 +65,9 @@ body {
   fill: var(--main-color);
 }
 
-.abcjs-chord {
-  font-size: 0.8rem;
+.abcjs-chord,
+.abcjs-annotation {
+  font-size: 0.7rem;
   font-family: serif;
 }
 
@@ -178,6 +178,7 @@ body {
 .accent-modes-view h3 {
   font-size: 1rem;
   margin-top: 0;
+  margin-bottom: 1rem;
   text-align: center;
 }
 
@@ -189,6 +190,10 @@ header p {
 footer {
   font-size: 0.9rem;
   line-height: 3rem;
+}
+
+footer a {
+  color: black;
 }
 
 @media screen and (max-width: 900px) {

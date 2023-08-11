@@ -12,12 +12,13 @@ function parseNote({ note, accented, finger }, index) {
   return output;
 }
 
-function partToAbc(notes) {
+function partToAbc({ notes = [], key = 'C', meter = '4/4', resolution = '1/16' }) {
+  console.log()
   const rows = chunk(notes, 16);
   const output = `
-K:Em
-L:1/16
-M:4/4
+K:${key}
+L:${resolution}
+M:${meter}
 ${rows.map((measure) => measure.map(parseNote).join("")).join("|\n")}||`;
   return output;
 }
@@ -26,16 +27,17 @@ const DEFAULT_OPTIONS = {
   responsive: "resize",
   add_classes: true,
   staffwidth: 600,
+  selectionColor: 'black',
 };
 
-export default function useAbc({ part, options = DEFAULT_OPTIONS }) {
+export default function useAbc({ part, key, meter, resolution ,options = DEFAULT_OPTIONS }) {
   const ref = useRef(null);
   useEffect(() => {
     if (!ref.current) {
       return;
     }
-    renderAbc(ref.current, partToAbc(part), options);
-  }, [part, options]);
+    renderAbc(ref.current, partToAbc({ notes: part, key, meter, resolution }), options);
+  }, [part, key, meter, resolution, options]);
 
   return ref;
 }

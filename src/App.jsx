@@ -105,7 +105,7 @@ export function App() {
                 how you should sound like.
               </p>
             </header>
-            <Score part={partWithAccents} />
+            <Score part={partWithAccents} key="Em"/>
             <div className="controls-wrapper">
               <div className="controls">
                 <IconButton icon={isPlaying ? "pause" : "play"} onClick={toggle}>
