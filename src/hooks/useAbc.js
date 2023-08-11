@@ -15,7 +15,7 @@ function parseNote({ note, accented, finger }, index) {
 function partToAbc(notes) {
   const rows = chunk(notes, 16);
   const output = `
-K:C
+K:Em
 L:1/16
 M:4/4
 ${rows.map((measure) => measure.map(parseNote).join("")).join("|\n")}||`;
