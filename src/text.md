@@ -1,8 +1,8 @@
 ## About the piece
 
-[Étude No. 1](https://en.wikipedia.org/wiki/%C3%89tude_No._1_(Villa-Lobos)) is an arpeggio study that is predominantly focused on a cross-string right-hand technique with the exception of one scalar passage from bar measure 23 to 24 and a series of cadential harmonics in measures 31 to 32.
+[Étude No. 1](https://en.wikipedia.org/wiki/%C3%89tude_No._1_(Villa-Lobos)) is an arpeggio study that is predominantly focused on a cross-string right-hand technique with a couple of exceptions.
 
-Even though you cannot accomplish the piece as a whole, approaching the right hand arpeggio pattern is very beneficial as suggested by many renowned guitarists:
+Even though you cannot accomplish the piece as a whole, approaching the right hand arpeggio pattern is very beneficial as suggested by many renowned guitarists like the following:
 
 <iframe src="https://www.youtube.com/embed/koy_nxVL-oU" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 

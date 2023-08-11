@@ -4,6 +4,7 @@
   "main": "src/main.jsx",
   "license": "MIT",
   "dependencies": {
+    "@moonwave99/keyfocus": "^0.0.7",
     "@tonaljs/tonal": "^4.10.0",
     "@vitejs/plugin-react": "2.0.1",
     "abcjs": "^6.2.2",
