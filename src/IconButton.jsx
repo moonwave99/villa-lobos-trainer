@@ -16,7 +16,7 @@ export default function IconButton({
       className={cx("icon-button", { toggable, toggled })}
       {...rest}
     >
-      <img src={`/icons/${icon}.png`} alt={children} />
+      <img src={`icons/${icon}.png`} alt={children} />
     </button>
   );
 }
